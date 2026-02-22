@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex Rivera — Tutor</title>
+  <title>Masud Shah — Tutor</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -319,41 +319,32 @@
   <script>
     const data = {
       hero: {
-        tag: "K–12 · College · All Subjects · In-Person & Online",
-        title: "Learning made <em>personal,</em><br>progress made real.",
-        sub: "Hi, I'm Alex — a dedicated tutor helping students of all ages find their footing in Math, Science, English, and more. Every session is shaped around you.",
+        tag: "Regents · AP · State Test · College · Test Prep · In-Person & Online",
+        title: "MS Tutoring —<br><em>Expert Help,</em> Every Subject.",
+        sub: "Hi, I'm Masud Shah — a dedicated tutor helping students of all ages excel in Math, Science, and more. Every session is tailored to your needs.",
       },
       about: {
         label: "About Me",
         title: "A teacher who meets<br>students where they are",
-        body: "I've been tutoring for over 8 years across all grade levels and subjects. My approach isn't one-size-fits-all — I take time to understand how each student thinks, where they're stuck, and what motivates them. Whether your child is struggling to keep up or aiming to get ahead, I'll build a plan that works for them.",
+        body: "I'm Masud Shah, a dedicated tutor based in New York City helping students across all grade levels succeed in Math, Science, and more. My approach is personalized — I take time to understand how each student thinks, where they're stuck, and what motivates them. Whether your child needs Regents prep, AP support, or college-level help, I'll build a plan that works.",
         stats: [
-          { num: "8+", desc: "Years Tutoring" },
           { num: "K–12", desc: "All Grade Levels" },
-          { num: "20+", desc: "Subjects Covered" },
+          { num: "AP", desc: "AP Subjects" },
+          { num: "SAT+", desc: "ACT, GRE, PSAT, SHSAT" },
           { num: "2×", desc: "In-Person & Online" },
         ]
       },
       offer: {
         label: "What I Offer",
         title: "Every subject.<br>Every level.",
-        body: "From elementary fundamentals to college coursework, I cover the full spectrum — so families don't need to look elsewhere.",
+        body: "From Regents prep to college coursework, I cover the full spectrum — so families don't need to look elsewhere.",
         cards: [
-          { emoji: "🔢", name: "Math", desc: "Arithmetic, Algebra, Geometry, Pre-Calc, Calculus, Statistics — from basics to advanced." },
-          { emoji: "🔬", name: "Science", desc: "Biology, Chemistry, Physics, Earth Science — concept-focused and exam-ready." },
-          { emoji: "✍️", name: "English & Writing", desc: "Reading comprehension, essay writing, grammar, literary analysis, and more." },
-          { emoji: "📝", name: "Test Prep", desc: "SAT, ACT, AP exams — structured prep with real practice and proven strategies." },
-          { emoji: "🎓", name: "College Courses", desc: "Introductory and advanced university coursework across multiple disciplines." },
-          { emoji: "💻", name: "Online & In-Person", desc: "Flexible session formats — meet locally or connect from anywhere via video call." },
-        ]
-      },
-      how: {
-        label: "How It Works",
-        title: "Simple to get started",
-        steps: [
-          { num: "01", title: "Reach Out", desc: "Send me a message with your subject, grade level, and what you're hoping to improve. I'll respond within 24 hours." },
-          { num: "02", title: "We Talk It Through", desc: "We have a quick conversation to understand your goals and figure out the best approach for your learning style." },
-          { num: "03", title: "Start Learning", desc: "We schedule sessions that work for you — in-person or online — and get to work at your pace." },
+          { emoji: "📐", name: "Regents Prep", desc: "Algebra 1, Algebra 2/Trig, Chemistry, Earth Science, Geometry, Living Environment, Physics." },
+          { emoji: "🧪", name: "AP Subjects", desc: "AP Biology, AP Calculus, AP Chemistry, AP Physics." },
+          { emoji: "📊", name: "State Test Prep", desc: "ELA, Mathematics, Science — fully prepared for New York State exams." },
+          { emoji: "🎓", name: "College Subjects", desc: "Calculus, Chemistry, Mathematics, Physics at the college level." },
+          { emoji: "📝", name: "Test Prep", desc: "ACT, GRE, PSAT, SAT, SHSAT — structured prep with proven strategies." },
+          { emoji: "💻", name: "In-Person & Online", desc: "Flexible session formats — meet in NYC or connect from anywhere via video call." },
         ]
       },
       contact: {
@@ -361,9 +352,9 @@
         title: "Ready to start?",
         body: "Reach out through any of the channels below and I'll get back to you shortly.",
         items: [
-          { label: "Email", value: "alex@yourmail.com" },
-          { label: "Phone", value: "(555) 123-4567" },
-          { label: "Location", value: "New York, NY · Online Available" },
+          { label: "Email", value: "mstutoring.nyc@gmail.com" },
+          { label: "Phone", value: "718-790-8862 (Mobile)" },
+          { label: "Location", value: "New York City · Online Available" },
         ]
       }
     };
@@ -456,7 +447,7 @@
     }
 
     function buildFooter() {
-      return `<footer>© 2026 Alex Rivera Tutoring — All rights reserved</footer>`;
+      return `<footer>© 2026 MS Tutoring · Masud Shah — All rights reserved</footer>`;
     }
 
     // Render everything
@@ -464,7 +455,6 @@
       buildHero(data.hero) +
       buildAbout(data.about) +
       buildOffer(data.offer) +
-      buildHow(data.how) +
       buildContact(data.contact) +
       buildFooter();
 
