@@ -3,113 +3,259 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MS Tutoring — Masud Shah</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>MS Tutoring</title>
+  <link rel="icon" type="image/png" href="logo.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-tag">Regents · AP · State Test · College · Test Prep · In-Person &amp; Online</div>
-    <h1>MS Tutoring —<br><em>Expert Help,</em> Every Subject.</h1>
-    <p class="hero-sub">Hi, I'm Masud Shah — a dedicated tutor helping students of all ages excel in Math, Science, and more. Every session is tailored to your needs.</p>
-    <div class="hero-badge"><span>✦</span> Now accepting new students</div>
-    <div class="hero-line"></div>
-  </section>
+<!-- ── NAVBAR ── -->
+<header class="navbar">
+  <div class="nav-inner">
 
-  <!-- ABOUT -->
-  <section class="about">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-img-wrap">
+        <!-- Add logo.png to your repo root — green square shows until then -->
+        <img src="logo.png" alt="MS Tutoring logo"/>
+      </div>
+      <span class="logo-name">MS <em>Tutoring</em></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html" class="nav-item active">Home</a>
+
+      <div class="dropdown">
+        <a href="#" class="nav-item" tabindex="0">Programs</a>
+        <div class="drop-menu">
+          <a href="programs/math-science.html">Math &amp; Science</a>
+          <a href="programs/english-history.html">English &amp; History</a>
+          <a href="programs/test-prep.html">Test Prep (SAT / ACT)</a>
+          <a href="programs/regents.html">Regents Review</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="nav-item" tabindex="0">About</a>
+        <div class="drop-menu">
+          <a href="about/mission.html">Our Mission</a>
+          <a href="about/team.html">Our Team</a>
+          <a href="about/testimonials.html">Testimonials</a>
+        </div>
+      </div>
+
+      <a href="schedule.html" class="nav-item">Schedule</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-inner">
+
     <div>
-      <div class="label">About Me</div>
-      <h2 class="section-title">A teacher who meets<br>students where they are</h2>
-      <p class="section-body">I'm Masud Shah, a dedicated tutor based in New York City helping students across all grade levels succeed in Math, Science, and more. My approach is personalized — I take time to understand how each student thinks, where they're stuck, and what motivates them. Whether your child needs Regents prep, AP support, or college-level help, I'll build a plan that works.</p>
-    </div>
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-num">K-12</div>
-        <div class="stat-desc">All Grade Levels</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">AP</div>
-        <div class="stat-desc">AP Subjects</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">SAT+</div>
-        <div class="stat-desc">ACT, GRE, PSAT, SHSAT</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">2x</div>
-        <div class="stat-desc">In-Person &amp; Online</div>
+      <div class="hero-tag">Academic Tutoring</div>
+      <h1 class="hero-title">Expert guidance.<br/><em>Real results.</em></h1>
+      <p class="hero-sub">Personalized, one-on-one tutoring for students at every level — from middle school through college prep, built around each student's individual needs.</p>
+      <div class="hero-actions">
+        <a href="programs/math-science.html" class="btn-solid">Explore Programs</a>
+        <a href="schedule.html" class="btn-ghost">View Schedule →</a>
       </div>
     </div>
-  </section>
 
-  <!-- WHAT I OFFER -->
-  <section class="offer">
-    <div class="offer-intro">
-      <div>
-        <div class="label">What I Offer</div>
-        <h2 class="section-title">Every subject.<br>Every level.</h2>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-icon">🎓</div>
+        <div>
+          <strong>500+</strong>
+          <span>Students successfully tutored</span>
+        </div>
       </div>
-      <p class="section-body">From Regents prep to college coursework, I cover the full spectrum — so families don't need to look elsewhere.</p>
-    </div>
-    <div class="offer-grid">
-      <div class="offer-card">
-        <span class="offer-emoji">📐</span>
-        <div class="offer-name">Regents Prep</div>
-        <div class="offer-desc">Algebra 1, Algebra 2/Trig, Chemistry, Earth Science, Geometry, Living Environment, Physics.</div>
+      <div class="stat">
+        <div class="stat-icon">📈</div>
+        <div>
+          <strong>92%</strong>
+          <span>Regents exam pass rate</span>
+        </div>
       </div>
-      <div class="offer-card">
-        <span class="offer-emoji">🧪</span>
-        <div class="offer-name">AP Subjects</div>
-        <div class="offer-desc">AP Biology, AP Calculus, AP Chemistry, AP Physics.</div>
-      </div>
-      <div class="offer-card">
-        <span class="offer-emoji">📊</span>
-        <div class="offer-name">State Test Prep</div>
-        <div class="offer-desc">ELA, Mathematics, Science — fully prepared for New York State exams.</div>
-      </div>
-      <div class="offer-card">
-        <span class="offer-emoji">🎓</span>
-        <div class="offer-name">College Subjects</div>
-        <div class="offer-desc">Calculus, Chemistry, Mathematics, Physics at the college level.</div>
-      </div>
-      <div class="offer-card">
-        <span class="offer-emoji">📝</span>
-        <div class="offer-name">Test Prep</div>
-        <div class="offer-desc">ACT, GRE, PSAT, SAT, SHSAT — structured prep with proven strategies.</div>
-      </div>
-      <div class="offer-card">
-        <span class="offer-emoji">💻</span>
-        <div class="offer-name">In-Person &amp; Online</div>
-        <div class="offer-desc">Flexible session formats — meet in NYC or connect from anywhere via video call.</div>
+      <div class="stat">
+        <div class="stat-icon">⭐</div>
+        <div>
+          <strong>4.9 / 5</strong>
+          <span>Average parent satisfaction</span>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <div class="label">Get In Touch</div>
-    <h2 class="section-title">Ready to start?</h2>
-    <p class="section-body">Reach out through any of the channels below and I'll get back to you shortly.</p>
-    <div class="contact-row">
-      <div class="contact-item">
-        <div class="contact-label">Email</div>
-        <div class="contact-value">mstutoring.nyc@gmail.com</div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-label">Phone</div>
-        <div class="contact-value">718-790-8862 (Mobile)</div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-label">Location</div>
-        <div class="contact-value">New York City · Online Available</div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <footer>2026 MS Tutoring · Masud Shah — All rights reserved</footer>
+<!-- ── SUBJECTS STRIP ── -->
+<div class="strip">
+  <div class="strip-track">
+    <div class="pill">Algebra</div>
+    <div class="pill">Biology</div>
+    <div class="pill">English ELA</div>
+    <div class="pill">Global History</div>
+    <div class="pill">Statistics</div>
+    <div class="pill">SAT / ACT Prep</div>
+    <div class="pill">Chemistry</div>
+    <div class="pill">Regents Review</div>
+    <div class="pill">Geometry</div>
+    <div class="pill">US History</div>
+    <div class="pill">Pre-Calculus</div>
+    <div class="pill">Earth Science</div>
+    <!-- duplicate set for seamless CSS loop -->
+    <div class="pill">Algebra</div>
+    <div class="pill">Biology</div>
+    <div class="pill">English ELA</div>
+    <div class="pill">Global History</div>
+    <div class="pill">Statistics</div>
+    <div class="pill">SAT / ACT Prep</div>
+    <div class="pill">Chemistry</div>
+    <div class="pill">Regents Review</div>
+    <div class="pill">Geometry</div>
+    <div class="pill">US History</div>
+    <div class="pill">Pre-Calculus</div>
+    <div class="pill">Earth Science</div>
+  </div>
+</div>
+
+<!-- ── PROGRAMS ── -->
+<section class="programs">
+  <div class="section-wrap">
+    <div class="section-eyebrow">Our Programs</div>
+    <h2 class="section-title">Find the right fit</h2>
+    <div class="prog-grid">
+
+      <div class="prog-card">
+        <div class="prog-icon">📐</div>
+        <h3>Math &amp; Science</h3>
+        <p>Algebra through Calculus, Physics, Chemistry, and Biology across all grade levels.</p>
+        <a href="programs/math-science.html" class="prog-link">Learn more →</a>
+      </div>
+
+      <div class="prog-card">
+        <div class="prog-icon">📖</div>
+        <h3>English &amp; History</h3>
+        <p>Reading comprehension, essay writing, DBQs, Global and US History.</p>
+        <a href="programs/english-history.html" class="prog-link">Learn more →</a>
+      </div>
+
+      <div class="prog-card featured">
+        <div class="prog-badge">Most Popular</div>
+        <div class="prog-icon">🎯</div>
+        <h3>SAT / ACT Prep</h3>
+        <p>Strategy, pacing, and content mastery — structured programs to maximize your score.</p>
+        <a href="programs/test-prep.html" class="prog-link">Learn more →</a>
+      </div>
+
+      <div class="prog-card">
+        <div class="prog-icon">📋</div>
+        <h3>Regents Review</h3>
+        <p>Intensive review for all NY Regents exams, timed to your exam schedule.</p>
+        <a href="programs/regents.html" class="prog-link">Learn more →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY MS TUTORING ── -->
+<section class="why">
+  <div class="section-wrap">
+    <div class="why-grid">
+
+      <div class="why-left">
+        <div class="section-eyebrow">Why MS Tutoring</div>
+        <h2 class="section-title">A different approach<br/>to learning</h2>
+        <p>We build strong academic foundations — not just quick fixes. Every student receives a personalized plan built around their specific needs and goals.</p>
+        <div class="features">
+          <div class="feat">
+            <div class="feat-dot"></div>
+            <p><strong>One-on-one sessions</strong> — dedicated attention every time, no group classes.</p>
+          </div>
+          <div class="feat">
+            <div class="feat-dot"></div>
+            <p><strong>Consistent tutors</strong> — the same tutor each session so students build confidence and trust.</p>
+          </div>
+          <div class="feat">
+            <div class="feat-dot"></div>
+            <p><strong>Progress tracking</strong> — regular updates so parents always know where their student stands.</p>
+          </div>
+          <div class="feat">
+            <div class="feat-dot"></div>
+            <p><strong>Flexible scheduling</strong> — weekday and weekend slots, in-person or online.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-right">
+        <div class="why-row">
+          <span class="why-label">Average grade improvement</span>
+          <span class="why-val">+15%</span>
+        </div>
+        <div class="why-row">
+          <span class="why-label">Regents exam pass rate</span>
+          <span class="why-val">92%</span>
+        </div>
+        <div class="why-row">
+          <span class="why-label">Students helped</span>
+          <span class="why-val">500+</span>
+        </div>
+        <div class="why-row">
+          <span class="why-label">Parent satisfaction</span>
+          <span class="why-val">4.9 / 5</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <div class="footer-logo-row">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="MS Tutoring logo"/>
+        </div>
+        <span>MS Tutoring</span>
+      </div>
+      <p class="footer-tagline">Personalized academic support for students ready to grow.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <a href="programs/math-science.html">Math &amp; Science</a>
+      <a href="programs/english-history.html">English &amp; History</a>
+      <a href="programs/test-prep.html">Test Prep</a>
+      <a href="programs/regents.html">Regents Review</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about/mission.html">Our Mission</a>
+      <a href="about/team.html">Our Team</a>
+      <a href="about/testimonials.html">Testimonials</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="contact.html">Get in Touch</a>
+      <a href="schedule.html">View Schedule</a>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 MS Tutoring. All rights reserved.</p>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
 
 </body>
 </html>
