@@ -1,1 +1,633 @@
+/* ─────────────────────────────────────────
+   MS Tutoring — pages.css
+   Shared styles for all inner pages.
+   Depends on style.css variables.
+───────────────────────────────────────── */
 
+/* ── PAGE HERO ── */
+.page-hero {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 72px 32px 80px;
+}
+
+.page-hero--narrow {
+  padding-bottom: 64px;
+}
+
+.page-hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  font-family: var(--font-head);
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.08;
+  margin: 10px 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.page-sub {
+  font-size: 0.975rem;
+  color: var(--mid);
+  line-height: 1.78;
+  max-width: 480px;
+  margin-bottom: 28px;
+}
+
+.page-hero-badge {
+  background: var(--green-light);
+  border: 1px solid rgba(45, 90, 36, 0.15);
+  border-radius: 14px;
+  padding: 28px 36px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.badge-num {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.badge-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--mid);
+  font-weight: 500;
+}
+
+/* ── SUBJECT SECTIONS ── */
+.subject-section {
+  padding: 72px 32px;
+  background: var(--cream);
+}
+
+.level-block {
+  margin-bottom: 48px;
+}
+
+.level-block:last-child {
+  margin-bottom: 0;
+}
+
+.level-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: var(--green-light);
+  border: 1px solid rgba(45, 90, 36, 0.15);
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.subject-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 18px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.subject-card:hover {
+  border-color: rgba(45, 90, 36, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.subject-card h4 {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.subject-card p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ── HOW IT WORKS ── */
+.how-section {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 72px 32px;
+}
+
+.steps-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  flex: 1;
+  min-width: 180px;
+  padding: 0 24px;
+}
+
+.step-card:first-child { padding-left: 0; }
+.step-card:last-child  { padding-right: 0; }
+
+.step-divider {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+  min-height: 100px;
+  flex-shrink: 0;
+}
+
+.step-num {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green);
+  opacity: 0.35;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.step-card h4 {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.step-card p {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ── CTA SECTION ── */
+.cta-section {
+  background: var(--cream);
+  border-top: 1px solid var(--border);
+  padding: 72px 32px;
+}
+
+.cta-box {
+  background: var(--green);
+  border-radius: 14px;
+  padding: 52px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.cta-box h2 {
+  font-family: var(--font-head);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+  max-width: 480px;
+  margin-bottom: 6px;
+}
+
+.cta-box p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+  max-width: 400px;
+}
+
+.cta-box .btn-solid {
+  background: var(--white);
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.cta-box .btn-solid:hover {
+  background: var(--cream);
+}
+
+/* ── SAT vs ACT COMPARE ── */
+.compare-section {
+  background: var(--cream);
+  border-top: 1px solid var(--border);
+  padding: 72px 32px;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.compare-col {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 28px;
+}
+
+.compare-head {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.compare-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.compare-list li {
+  font-size: 0.875rem;
+  color: var(--mid);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.compare-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+}
+
+.compare-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ── PROSE (MISSION) ── */
+.prose-section {
+  padding: 72px 32px;
+  background: var(--cream);
+}
+
+.prose-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 56px;
+  align-items: start;
+}
+
+.prose-main h2 {
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin: 36px 0 14px;
+}
+
+.prose-main h2:first-child {
+  margin-top: 0;
+}
+
+.prose-main p {
+  font-size: 0.93rem;
+  color: var(--mid);
+  line-height: 1.82;
+  margin-bottom: 16px;
+}
+
+.prose-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.value-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 22px;
+  text-align: center;
+}
+
+.value-card .value-num {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.value-card p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* ── VALUES SECTION ── */
+.values-section {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 72px 32px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.value-tile {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 20px;
+}
+
+.value-icon {
+  font-size: 1.3rem;
+  color: var(--green);
+  margin-bottom: 12px;
+  opacity: 0.6;
+}
+
+.value-tile h4 {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.value-tile p {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ── TEAM PAGE ── */
+.team-section {
+  padding: 72px 32px;
+  background: var(--cream);
+}
+
+.team-intro {
+  max-width: 680px;
+  margin-bottom: 0;
+}
+
+.team-intro p {
+  font-size: 0.95rem;
+  color: var(--mid);
+  line-height: 1.8;
+}
+
+.prose-section .team-intro {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px 32px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.team-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.team-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--green-light);
+  border: 2px solid var(--border);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* If you add real photos: <img src="..." /> inside .team-avatar */
+.team-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info h4 {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.team-subject {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brick);
+  margin-bottom: 8px;
+}
+
+.team-info p {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.placeholder-card {
+  opacity: 0.6;
+  border-style: dashed;
+}
+
+.team-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  background: var(--parchment);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 16px;
+  display: inline-block;
+}
+
+/* ── CONTACT PAGE ── */
+.contact-section {
+  padding: 72px 32px;
+  background: var(--cream);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.contact-info h2 {
+  font-family: var(--font-head);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 14px;
+  line-height: 1.15;
+}
+
+.contact-info > p {
+  font-size: 0.9rem;
+  color: var(--mid);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-row:last-child {
+  border-bottom: none;
+}
+
+.contact-icon {
+  width: 38px;
+  height: 38px;
+  background: var(--green-light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.contact-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+
+.contact-value {
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+a.contact-value:hover {
+  color: var(--green);
+}
+
+/* FAQ */
+.contact-faq {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 28px;
+}
+
+.contact-faq h3 {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 22px;
+}
+
+.faq-item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:first-of-type { padding-top: 0; }
+.faq-item:last-child    { border-bottom: none; padding-bottom: 0; }
+
+.faq-q {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.faq-a {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .prose-grid    { grid-template-columns: 1fr; }
+  .prose-aside   { flex-direction: row; flex-wrap: wrap; }
+  .prose-aside .value-card { flex: 1; min-width: 140px; }
+  .values-grid   { grid-template-columns: 1fr 1fr; }
+  .contact-grid  { grid-template-columns: 1fr; }
+  .steps-row     { flex-direction: column; gap: 0; }
+  .step-card     { padding: 20px 0; border-bottom: 1px solid var(--border); }
+  .step-card:last-child { border-bottom: none; }
+  .step-divider  { display: none; }
+  .compare-grid  { grid-template-columns: 1fr; }
+  .cta-box       { flex-direction: column; text-align: center; }
+  .cta-box h2, .cta-box p { max-width: 100%; }
+}
+
+@media (max-width: 600px) {
+  .page-hero       { padding: 52px 20px 56px; }
+  .subject-section,
+  .how-section,
+  .cta-section,
+  .prose-section,
+  .values-section,
+  .team-section,
+  .contact-section,
+  .compare-section { padding: 52px 20px; }
+  .values-grid     { grid-template-columns: 1fr; }
+  .subject-grid    { grid-template-columns: 1fr; }
+  .cta-box         { padding: 32px 24px; }
+  .page-hero-badge { width: 100%; }
+}
