@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Extra Resources — MS Tutoring</title>
+  <link rel="icon" type="image/png" href="../logo.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/pages.css"/>
+  <style>
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    .resource-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .resource-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--green);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s;
+    }
+
+    .resource-card:hover {
+      border-color: transparent;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.09);
+      transform: translateY(-3px);
+    }
+
+    .resource-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .resource-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brick);
+      background: rgba(139,46,26,0.08);
+      border: 1px solid rgba(139,46,26,0.15);
+      padding: 3px 9px;
+      border-radius: 4px;
+      width: fit-content;
+    }
+
+    .resource-card h4 {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .resource-card p {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.65;
+      flex: 1;
+      margin: 0;
+    }
+
+    .resource-link {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--green);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 4px;
+    }
+
+    .resource-link::after {
+      content: '→';
+    }
+
+    .resource-section {
+      padding: 72px 32px;
+      background: var(--cream);
+    }
+
+    .resource-section + .resource-section {
+      padding-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      .resource-section { padding: 52px 20px; }
+      .resource-section + .resource-section { padding-top: 0; }
+      .resource-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-img-wrap"><img src="../logo.png" alt="MS Tutoring logo"/></div>
+      <span class="logo-name">MS <em>Tutoring</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html" class="nav-item">Home</a>
+      <div class="dropdown">
+        <a href="#" class="nav-item" tabindex="0">Programs</a>
+        <div class="drop-menu">
+          <a href="math-science.html">Math &amp; Science</a>
+          <a href="english-history.html">English &amp; History</a>
+          <a href="test-prep.html">Test Prep (SAT / ACT)</a>
+          <a href="regents.html">Regents Review</a>
+        </div>
+      </div>
+      <a href="extra.html" class="nav-item active">Extra</a>
+      <a href="../contact.html" class="nav-item">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="section-wrap">
+    <div class="page-hero-inner">
+      <div>
+        <div class="section-eyebrow">Free Resources</div>
+        <h1 class="page-title">Extra Resources</h1>
+        <p class="page-sub">A curated list of free, high-quality websites to help NYC students study smarter — covering math, science, history, test prep, and more.</p>
+      </div>
+      <div class="page-hero-badge">
+        <span class="badge-num">100%</span>
+        <span class="badge-label">Free to Use</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATH -->
+<section class="resource-section">
+  <div class="section-wrap">
+    <div class="section-eyebrow">Math</div>
+    <h2 class="section-title">Math Tools &amp; Practice</h2>
+    <div class="resource-grid">
+
+      <a href="https://www.jmap.org" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Regents</span>
+        <h4>JMAP</h4>
+        <p>Every NY Regents math exam ever written, organized by topic. Includes answer keys, worksheets, and teacher resources for Algebra I, II, and Geometry.</p>
+        <span class="resource-link">jmap.org</span>
+      </a>
+
+      <a href="https://www.khanacademy.org" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">All Levels</span>
+        <h4>Khan Academy</h4>
+        <p>Free video lessons and practice problems for every math topic from basic arithmetic through AP Calculus and Statistics. Also syncs with SAT prep.</p>
+        <span class="resource-link">khanacademy.org</span>
+      </a>
+
+      <a href="https://www.desmos.com" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Tool</span>
+        <h4>Desmos</h4>
+        <p>A powerful free graphing calculator used on NY Regents and SAT exams. Practice using it now so it's familiar come test day.</p>
+        <span class="resource-link">desmos.com</span>
+      </a>
+
+      <a href="https://www.wolframalpha.com" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Tool</span>
+        <h4>Wolfram Alpha</h4>
+        <p>Step-by-step math solver for algebra, calculus, statistics, and more. Great for checking your work and understanding how answers are reached.</p>
+        <span class="resource-link">wolframalpha.com</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE -->
+<section class="resource-section">
+  <div class="section-wrap">
+    <div class="section-eyebrow">Science</div>
+    <h2 class="section-title">Science &amp; Lab Resources</h2>
+    <div class="resource-grid">
+
+      <a href="https://www.ck12.org" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">All Levels</span>
+        <h4>CK-12</h4>
+        <p>Free textbooks, simulations, and practice for Biology, Chemistry, Physics, and Earth Science. Fully aligned to NY state standards.</p>
+        <span class="resource-link">ck12.org</span>
+      </a>
+
+      <a href="https://phet.colorado.edu" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Simulations</span>
+        <h4>PhET Simulations</h4>
+        <p>Interactive science and math simulations from the University of Colorado. Perfect for visualizing concepts like circuits, forces, waves, and chemical reactions.</p>
+        <span class="resource-link">phet.colorado.edu</span>
+      </a>
+
+      <a href="https://www.bozemanscience.com" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Video</span>
+        <h4>Bozeman Science</h4>
+        <p>High-quality science videos covering AP Biology, AP Chemistry, AP Physics, and AP Environmental Science. Clear, concise, and exam-focused.</p>
+        <span class="resource-link">bozemanscience.com</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ELA & HISTORY -->
+<section class="resource-section">
+  <div class="section-wrap">
+    <div class="section-eyebrow">English &amp; History</div>
+    <h2 class="section-title">Reading, Writing &amp; History</h2>
+    <div class="resource-grid">
+
+      <a href="https://www.commonlit.org" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">ELA</span>
+        <h4>CommonLit</h4>
+        <p>Free reading passages with guided questions for grades 3–12. Includes fiction, nonfiction, and poetry — great for building comprehension and analysis skills.</p>
+        <span class="resource-link">commonlit.org</span>
+      </a>
+
+      <a href="https://www.purdue.edu/owl" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Writing</span>
+        <h4>Purdue OWL</h4>
+        <p>The gold standard for writing guides. Covers essay structure, MLA and APA citation, grammar rules, and research paper formatting.</p>
+        <span class="resource-link">purdue.edu/owl</span>
+      </a>
+
+      <a href="https://www.varsitytutors.com/regents-english-practice-tests" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Regents</span>
+        <h4>Varsity Tutors — English Regents</h4>
+        <p>Free English Regents practice tests with detailed answer explanations. Good for building familiarity with the text analysis and argument essay formats.</p>
+        <span class="resource-link">varsitytutors.com</span>
+      </a>
+
+      <a href="https://www.historysage.com" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">History</span>
+        <h4>History Sage</h4>
+        <p>Detailed outlines and essay guides for AP US History and AP World History. Helpful for DBQ and LEQ practice.</p>
+        <span class="resource-link">historysage.com</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- TEST PREP -->
+<section class="resource-section">
+  <div class="section-wrap">
+    <div class="section-eyebrow">Test Prep</div>
+    <h2 class="section-title">SAT, ACT &amp; Regents Prep</h2>
+    <div class="resource-grid">
+
+      <a href="https://www.khanacademy.org/SAT" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">SAT</span>
+        <h4>Khan Academy SAT Prep</h4>
+        <p>Official College Board partner for SAT prep. Personalized practice linked to your PSAT results. Completely free and proven to raise scores.</p>
+        <span class="resource-link">khanacademy.org/SAT</span>
+      </a>
+
+      <a href="https://www.nysedregents.org" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Regents</span>
+        <h4>NYSED Regents Exams</h4>
+        <p>The official source for all NY Regents exams. Download past exams and scoring guides directly from the NY State Education Department.</p>
+        <span class="resource-link">nysedregents.org</span>
+      </a>
+
+      <a href="https://www.cracksat.net" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">SAT / ACT</span>
+        <h4>CrackSAT</h4>
+        <p>A large library of real SAT and ACT practice tests available for free. One of the best places to find official past exams to practice with.</p>
+        <span class="resource-link">cracksat.net</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- NYC SPECIFIC -->
+<section class="resource-section">
+  <div class="section-wrap">
+    <div class="section-eyebrow">NYC Students</div>
+    <h2 class="section-title">NYC-Specific Resources</h2>
+    <div class="resource-grid">
+
+      <a href="https://www.nypl.org" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Library</span>
+        <h4>New York Public Library</h4>
+        <p>Free access to databases, e-books, tutoring, and study spaces across all five boroughs. Your library card unlocks a huge amount of free digital resources.</p>
+        <span class="resource-link">nypl.org</span>
+      </a>
+
+      <a href="https://schools.nyc.gov" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">NYC DOE</span>
+        <h4>NYC Schools Portal</h4>
+        <p>The official NYC Department of Education site. Access grades, attendance, school resources, and information about programs and opportunities.</p>
+        <span class="resource-link">schools.nyc.gov</span>
+      </a>
+
+      <a href="https://www.igetit.nyc" target="_blank" rel="noopener" class="resource-card">
+        <span class="resource-tag">Free Internet</span>
+        <h4>NYC Free Internet (iGetIt)</h4>
+        <p>NYC's program providing free or low-cost broadband to qualifying households. Don't let a lack of internet access get in the way of studying.</p>
+        <span class="resource-link">igetit.nyc</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="section-wrap">
+    <div class="cta-box">
+      <div>
+        <h2>Want guided support alongside these resources?</h2>
+        <p>Our tutors work with these tools in sessions to make sure students are using them effectively.</p>
+      </div>
+      <a href="../contact.html" class="btn-solid">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-row">
+        <div class="footer-logo-wrap"><img src="../logo.png" alt="MS Tutoring logo"/></div>
+        <span>MS Tutoring</span>
+      </div>
+      <p class="footer-tagline">Personalized academic support for students ready to grow.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <a href="math-science.html">Math &amp; Science</a>
+      <a href="english-history.html">English &amp; History</a>
+      <a href="test-prep.html">Test Prep</a>
+      <a href="regents.html">Regents Review</a>
+    </div>
+    <div class="footer-col">
+      <h4>More</h4>
+      <a href="extra.html">Extra Resources</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="../contact.html">Get in Touch</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 MS Tutoring. All rights reserved.</p>
+    <a href="../privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
