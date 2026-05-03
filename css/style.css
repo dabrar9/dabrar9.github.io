@@ -641,6 +641,18 @@ img { display: block; max-width: 100%; }
 
 .footer-bottom a:hover { color: rgba(245, 240, 232, 0.65); }
 
+/* ── PROGRAM CARD COLORS ── */
+.prog-card:nth-child(1) { border-color: #2d5a24; }
+.prog-card:nth-child(2) { border-color: #8b2e1a; }
+.prog-card:nth-child(3) { border-color: #1e3a5f; }
+.prog-card:nth-child(4) { border-color: #b5620a; }
+
+
+/* ── SUBJECT CARD COLORS BY PAGE ── */
+.math-science   .subject-card { border-color: #2d5a24; }
+.english-history .subject-card { border-color: #8b2e1a; }
+.test-prep      .subject-card { border-color: #1e3a5f; }
+.regents        .subject-card { border-color: #b5620a; }
 /* ─────────────────────────────
    RESPONSIVE
 ───────────────────────────── */
