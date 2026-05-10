@@ -94,7 +94,7 @@ img { display: block; max-width: 100%; }
 
 .logo-name {
   font-family: var(--font-head);
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--ink);
   letter-spacing: 0.01em;
@@ -327,10 +327,11 @@ img { display: block; max-width: 100%; }
    SUBJECTS STRIP
 ───────────────────────────── */
 .strip {
-  background: var(--green);
+  background: #f2f2da;
   padding: 12px 0;
   overflow: hidden;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 .strip-track {
@@ -350,9 +351,9 @@ img { display: block; max-width: 100%; }
 }
 
 .pill {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #fff;
+  background: rgba(0, 255, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #041785;
   font-size: 0.77rem;
   font-weight: 500;
   padding: 5px 16px;
@@ -399,7 +400,7 @@ img { display: block; max-width: 100%; }
 }
 
 .prog-card {
-  background: var(--white);
+  background: #eef2ff;
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 28px 22px;
@@ -437,9 +438,8 @@ img { display: block; max-width: 100%; }
 
 .prog-badge {
   display: inline-block;
-  background: var(--brick);
   color: #fff;
-  font-size: 0.62rem;
+  font-size: .85rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -447,6 +447,11 @@ img { display: block; max-width: 100%; }
   border-radius: 4px;
   margin-bottom: 12px;
 }
+
+.prog-badge--green  { background: #639922; color: #EAF3DE; }
+.prog-badge--blue   { background: #85B7EB; color: #042C53; }
+.prog-badge--red    { background: #E24B4A; color: #FCEBEB; }
+.prog-badge--orange { background: #EF9F27; color: #412402; }
 
 .prog-icon {
   font-size: 1.5rem;

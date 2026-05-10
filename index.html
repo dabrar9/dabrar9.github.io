@@ -1,151 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MS TUTORING</title>
-  <link rel="icon" type="image/png" href="logo.png"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MS TUTORING</title>
+    <link rel="icon" type="image/png" href="logo.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
 
-<!-- ── NAVBAR ── -->
-<header class="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <div class="logo-img-wrap">
-        <img src="logo.png" alt="MS Tutoring logo"/>
+    <!-- ── NAVBAR ── -->
+    <header class="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-img-wrap">
+            <img src="logo.png" alt="MS Tutoring logo"/>
+          </div>
+          <span class="logo-name">MS <em>TUTORING</em></span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-item active">Home</a>
+          <div class="dropdown">
+            <a href="#" class="nav-item" tabindex="0">Programs</a>
+            <div class="drop-menu">
+              <a href="programs/math-science.html">Math &amp; Science</a>
+              <a href="programs/english-history.html">English &amp; History</a>
+              <a href="programs/test-prep.html">Test Prep (SAT / ACT)</a>
+              <a href="programs/regents.html">Regents Review</a>
+              <a href="programs/extra.html" class="nav-item">Extra</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item">Contact</a>
+        </nav>
       </div>
-      <span class="logo-name">MS <em>TUTORING</em></span>
-    </a>
-    <nav class="nav-links">
-      <a href="index.html" class="nav-item active">Home</a>
-      <div class="dropdown">
-        <a href="#" class="nav-item" tabindex="0">Programs</a>
-        <div class="drop-menu">
+    </header>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="hero-tag">Academic Tutoring</div>
+          <h1 class="hero-title">Expert guidance.<br/><em>Real results.</em></h1>
+          <p class="hero-sub">Personalized, one-on-one tutoring for students at every level — from elementary school through college, built around each student's individual needs.</p>
+          <div class="hero-actions">
+            <a href="programs/math-science.html" class="btn-solid">Explore Programs</a>
+            <a href="contact.html" class="btn-ghost">Get in Touch →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SUBJECTS STRIP ── -->
+    <div class="strip">
+      <div class="strip-track">
+        <div class="pill">Algebra</div>
+        <div class="pill">Biology</div>
+        <div class="pill">Statistics</div>
+        <div class="pill">SAT/ACT/PSAT Prep</div>
+        <div class="pill">Chemistry</div>
+        <div class="pill">Regents Review</div>
+        <div class="pill">Geometry</div>
+        <div class="pill">Pre-Calculus</div>
+        <div class="pill">Earth Science</div>
+        <div class="pill">Algebra</div>
+        <div class="pill">Biology</div>
+        <div class="pill">GED</div>
+        <div class="pill">College Physics</div>
+        <div class="pill">College Calculus</div>
+        <div class="pill">Statistics</div>
+        <div class="pill">SHSAT Prep</div>
+        <div class="pill">Chemistry</div>
+        <div class="pill">Regents Review</div>
+        <div class="pill">Geometry</div>
+        <div class="pill">Pre-Calculus</div>
+        <div class="pill">Calculus</div>
+        <div class="pill">NYSATAS</div>
+        <div class="pill">College Chemistry</div>
+      </div>
+    </div>
+
+    <!-- ── PROGRAMS ── -->
+    <section class="programs">
+      <div class="section-wrap">
+        <div class="section-eyebrow">Our Programs</div>
+        <h2 class="section-title">Find the right fit</h2>
+        <div class="prog-grid">
+
+          <div class="prog-card">
+            <h3><div class="prog-badge prog-badge--green">Math &amp; Science</div></h3>
+            <p style="color:black"><b>Algebra through Calculus, Physics, Chemistry, and Biology across all grade levels.</b></p>
+            <a href="programs/math-science.html" class="prog-link">Learn more →</a>
+          </div>
+
+          <div class="prog-card">
+            <h3><div class="prog-badge prog-badge--blue">English &amp; History</div></h3>
+            <p style="color:black"><b>Reading comprehension, essay writing, DBQs, Global and US History.</b></p>
+            <a href="programs/english-history.html" class="prog-link">Learn more →</a>
+          </div>
+
+          <div class="prog-card featured">
+            <h3><div class="prog-badge prog-badge--orange">SAT / ACT / SHSAT Prep</div></h3>
+            <p style="color:black"><b>Strategy, pacing, and content mastery — structured programs to maximize your score.</b></p>
+            <a href="programs/test-prep.html" class="prog-link">Learn more →</a>
+          </div>
+
+          <div class="prog-card">
+            <h3><div class="prog-badge prog-badge--red">Regents Review</div></h3>
+            <p style="color:black"><b>Intensive review for all NY Regents exams, timed to your exam schedule.</b></p>
+            <a href="programs/regents.html" class="prog-link">Learn more →</a>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <div class="footer-logo-wrap">
+              <img src="logo.png" alt="MS Tutoring logo"/>
+            </div>
+            <span>MS Tutoring</span>
+          </div>
+          <p class="footer-tagline">Personalized academic support for students ready to grow.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
           <a href="programs/math-science.html">Math &amp; Science</a>
           <a href="programs/english-history.html">English &amp; History</a>
-          <a href="programs/test-prep.html">Test Prep (SAT / ACT)</a>
+          <a href="programs/test-prep.html">Test Prep</a>
           <a href="programs/regents.html">Regents Review</a>
-          <a href="programs/extra.html" class="nav-item">Extra</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="contact.html">Get in Touch</a>
         </div>
       </div>
-      <a href="contact.html" class="nav-item">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- ── HERO ── -->
-<section class="hero">
-  <div class="hero-inner">
-    <div>
-      <div class="hero-tag">Academic Tutoring</div>
-      <h1 class="hero-title">Expert guidance.<br/><em>Real results.</em></h1>
-      <p class="hero-sub">Personalized, one-on-one tutoring for students at every level — from elementary school through college, built around each student's individual needs.</p>
-      <div class="hero-actions">
-        <a href="programs/math-science.html" class="btn-solid">Explore Programs</a>
-        <a href="contact.html" class="btn-ghost">Get in Touch →</a>
+      <div class="footer-bottom">
+        <p>© 2026 MS Tutoring. All rights reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
       </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- ── SUBJECTS STRIP ── -->
-<div class="strip">
-  <div class="strip-track">
-    <div class="pill">Algebra</div>
-    <div class="pill">Biology</div>
-    <div class="pill">English ELA</div>
-    <div class="pill">Statistics</div>
-    <div class="pill">SAT / ACT Prep</div>
-    <div class="pill">Chemistry</div>
-    <div class="pill">Regents Review</div>
-    <div class="pill">Geometry</div>
-    <div class="pill">Pre-Calculus</div>
-    <div class="pill">Earth Science</div>
-    <div class="pill">Algebra</div>
-    <div class="pill">Biology</div>
-    <div class="pill">College Physics</div>
-    <div class="pill">English ELA</div>
-    <div class="pill">Statistics</div>
-    <div class="pill">SAT / ACT Prep</div>
-    <div class="pill">Chemistry</div>
-    <div class="pill">Regents Review</div>
-    <div class="pill">Geometry</div>
-    <div class="pill">US History</div>
-    <div class="pill">Pre-Calculus</div>
-    <div class="pill">Earth Science</div>
-    <div class="pill">Calculus</div>
-    <div class="pill">College Chemistry</div>
-  </div>
-</div>
-
-<!-- ── PROGRAMS ── -->
-<section class="programs">
-  <div class="section-wrap">
-    <div class="section-eyebrow">Our Programs</div>
-    <h2 class="section-title">Find the right fit</h2>
-    <div class="prog-grid">
-
-      <div class="prog-card">
-        <h3><b>Math &amp; Science</b></h3>
-        <p>Algebra through Calculus, Physics, Chemistry, and Biology across all grade levels.</p>
-        <a href="programs/math-science.html" class="prog-link">Learn more →</a>
-      </div>
-
-      <div class="prog-card">
-        <h3><b>English &amp; History</b></h3>
-        <p>Reading comprehension, essay writing, DBQs, Global and US History.</p>
-        <a href="programs/english-history.html" class="prog-link">Learn more →</a>
-      </div>
-
-      <div class="prog-card featured">
-        <div class="prog-badge"><b>Most Popular</b></div>
-        <h3>SAT / ACT Prep</h3>
-        <p>Strategy, pacing, and content mastery — structured programs to maximize your score.</p>
-        <a href="programs/test-prep.html" class="prog-link">Learn more →</a>
-      </div>
-
-      <div class="prog-card">
-        <h3><b>Regents Review</b></h3>
-        <p>Intensive review for all NY Regents exams, timed to your exam schedule.</p>
-        <a href="programs/regents.html" class="prog-link">Learn more →</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── FOOTER ── -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="footer-logo-row">
-        <div class="footer-logo-wrap">
-          <img src="logo.png" alt="MS Tutoring logo"/>
-        </div>
-        <span>MS Tutoring</span>
-      </div>
-      <p class="footer-tagline">Personalized academic support for students ready to grow.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Programs</h4>
-      <a href="programs/math-science.html">Math &amp; Science</a>
-      <a href="programs/english-history.html">English &amp; History</a>
-      <a href="programs/test-prep.html">Test Prep</a>
-      <a href="programs/regents.html">Regents Review</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <a href="contact.html">Get in Touch</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 MS Tutoring. All rights reserved.</p>
-    <a href="privacy.html">Privacy Policy</a>
-  </div>
-</footer>
-
-</body>
+  </body>
 </html>
