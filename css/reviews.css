@@ -1,0 +1,65 @@
+/* ─────────────────────────────────────────
+   MS Tutoring — reviews.css
+   Styles for reviews.html.
+   Depends on style.css variables.
+───────────────────────────────────────── */
+
+.reviews-section {
+  padding: 72px 32px;
+  background: var(--cream);
+}
+
+/* ── ELFSIGHT WIDGET WRAPPER ── */
+#reviews-widget {
+  margin-bottom: 48px;
+}
+
+/* ── LEAVE A REVIEW ── */
+.leave-review-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 40px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.leave-review-box h3 {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.leave-review-box p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  max-width: 400px;
+  line-height: 1.65;
+}
+
+.btn-google {
+  display: inline-block;
+  background: var(--green);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 12px 24px;
+  border-radius: 7px;
+  letter-spacing: 0.02em;
+  transition: background 0.18s;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.btn-google:hover { background: var(--green-mid); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .reviews-section { padding: 52px 20px; }
+  .leave-review-box { flex-direction: column; padding: 28px 22px; }
+}
