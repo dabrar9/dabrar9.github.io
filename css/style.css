@@ -660,6 +660,70 @@ img { display: block; max-width: 100%; }
 .test-prep      .subject-card { border-color: #1e3a5f; }
 .regents        .subject-card { border-color: #b5620a; }
 /* ─────────────────────────────
+   ABOUT
+───────────────────────────── */
+.about {
+  background: var(--white);
+  padding: 72px 32px 80px;
+}
+
+.about-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 64px;
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.about-left .section-title {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1.2;
+  margin-bottom: 0;
+  color: var(--ink);
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.about-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.about-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.about-item strong {
+  display: block;
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 5px;
+}
+
+.about-item p {
+  font-size: 0.86rem;
+  color: var(--mid);
+  line-height: 1.72;
+  margin: 0;
+}
+
+/* ─────────────────────────────
    RESPONSIVE
 ───────────────────────────── */
 @media (max-width: 960px) {
@@ -668,12 +732,14 @@ img { display: block; max-width: 100%; }
   .prog-grid    { grid-template-columns: 1fr 1fr; }
   .why-grid     { grid-template-columns: 1fr; gap: 40px; }
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .about-inner  { grid-template-columns: 1fr; gap: 36px; }
 }
 
 @media (max-width: 600px) {
   .hero         { padding: 56px 20px 60px; }
   .programs,
   .why          { padding: 60px 20px; }
+  .about        { padding: 52px 20px 60px; }
   .prog-grid    { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; }
