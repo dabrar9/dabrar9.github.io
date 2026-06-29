@@ -649,9 +649,9 @@ img { display: block; max-width: 100%; }
 
 /* ── PROGRAM CARD COLORS ── */
 .prog-card:nth-child(1) { border-color: #2d5a24; }
-.prog-card:nth-child(2) { border-color: #8b2e1a; }
-.prog-card:nth-child(3) { border-color: #1e3a5f; }
-.prog-card:nth-child(4) { border-color: #b5620a; }
+.prog-card:nth-child(2) { border-color: #b5620a; }
+.prog-card:nth-child(3) { border-color: #8b2e1a; }
+.prog-card:nth-child(4) { border-color: #1e3a5f; }
 
 
 /* ── SUBJECT CARD COLORS BY PAGE ── */
@@ -664,7 +664,7 @@ img { display: block; max-width: 100%; }
 ───────────────────────────── */
 .about {
   background: var(--white);
-  padding: 72px 32px 80px;
+  padding: 42px 32px 80px;
 }
 
 .about-divider {
@@ -695,7 +695,7 @@ img { display: block; max-width: 100%; }
 
 .about-item {
   display: flex;
-  gap: 18px;
+  gap: 8px;
   align-items: flex-start;
 }
 
@@ -713,7 +713,7 @@ img { display: block; max-width: 100%; }
   font-size: 0.93rem;
   font-weight: 600;
   color: var(--ink);
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .about-item p {
